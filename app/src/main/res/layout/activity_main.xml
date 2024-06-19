@@ -12,7 +12,6 @@
         android:layout_height="wrap_content"
         android:text="Album Info"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:padding="16dp"/>
 
     <!-- Кнопка Play/Pause -->
@@ -20,8 +19,17 @@
         android:id="@+id/play_pause_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@android:drawable/ic_media_play"
+
+        android:src="@drawable/play_icon"
         android:layout_below="@id/album_info"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"/>
+    <TextView
+        android:id="@+id/track_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/play_pause_button"
+        android:text="Track"
         android:layout_centerHorizontal="true"
         android:padding="16dp"/>
 
@@ -30,11 +38,7 @@
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/play_pause_button"
+        android:layout_below="@id/track_info"
         android:padding="16dp"/>
-    <Button
-        android:id="@+id/playPauseButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Play" />
+
 </RelativeLayout>
